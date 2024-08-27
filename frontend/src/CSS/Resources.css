@@ -1,0 +1,30 @@
+.container-res {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;
+}
+
+.subject-box {
+    width: calc(50% - 40px); /* Set width to half of the container width with spacing */
+    margin: 20px; /* Add margin to create space between boxes */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.subject-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.subject-box ul li {
+    margin-bottom: 10px;
+}
+
+.subject-box ul li a {
+    text-decoration: none;
+    color: #333;
+}

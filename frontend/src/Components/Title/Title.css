@@ -1,0 +1,21 @@
+.title{
+    text-align: center;
+    color:#212EA0;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:70px 0 30px;
+}
+.title h3{
+    font-size:32px;
+    color:#000F38;
+    margin-top: 5px;
+    text-transform: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title h2{
+    font-weight: 600;
+    font-weight: 16px;
+    color:#212EA0;
+    font-family: 'Times New Roman', Times, serif;
+}

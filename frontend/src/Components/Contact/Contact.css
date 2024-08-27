@@ -1,0 +1,18 @@
+.contact{
+    margin:80px auto;
+    max-width:90%;
+    display:flex;
+    align-content:center;
+    justify-content: space-between;
+}
+.contact-col{
+    flex-basis: 48%;
+    color:#0a0a0a;
+    
+}
+.contact-col h3{
+    color:#000F38;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}

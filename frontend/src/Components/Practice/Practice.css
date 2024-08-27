@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.practices{
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+.practices .box-container-mcq{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap:50px;
+}
+.practices .box-container-mcq .box-mcq{
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: linear-gradient(45deg,white,rgb(127, 127, 179));
+    color:black;
+    text-align: center;
+    padding:30px 20px;
+}
+.practices .box-container-mcq .box-mcq img{
+    height:80px;
+
+}
+.practices .box-container-mcq .box-mcq .practice-btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:rgb(74, 74, 112);
+    color:white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding:8px 25px;
+}
+.practices .box-container-mcq .box-mcq .practice-btn:hover{
+    letter-spacing: 1px;
+}
+
+.practices .box-container-mcq .box-mcq:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.02);
+}
+h1{
+    font-size: 50px;
+    font-weight: 600;
+
+}
