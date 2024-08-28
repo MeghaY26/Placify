@@ -4,7 +4,7 @@ import mysql from "mysql";
 import cors from "cors";
 import twilio from 'twilio';
 import dotenv from 'dotenv';
-
+import bcrypt from 'bcrypt';
 const PORT=process.env.PORT||3001;
 
 const app=express();
@@ -34,7 +34,9 @@ app.post("/signup",(req,res)=>{
     var bpemail=req.body["email"];
     var bpphno=req.body["phno"];
     var bppwd=req.body["password"];
-    
+    //const saltRounds = 10;
+    //const hashedPassword =  bcrypt.hash(bppwd, saltRounds);
+
     con.query('Select email from student where email=?',[bpemail],function(err,result){
         if(err) {throw err;}
         else{
@@ -65,12 +67,14 @@ app.post("/login", async (req, res) => {
         else {
             console.log(result);
             if (result.length > 0) {
-
+               //const storedHashedPassword = result[0].password;
+               //const isMatch =  bcrypt.compare(bpupwd, storedHashedPassword);
                 con.query('select password from student where email=? and password=?', [bpemail, bpupwd], function (error, result) {
                     if (error) { throw error; }
                     else {
 
                         if (result.length > 0) {
+                            
                             student_email = bpemail;
                             console.log(student_email);
                             res.json({ message: "Success", success: true });
